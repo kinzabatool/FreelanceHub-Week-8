@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Marketplace | FreelanceHub</title><link rel="stylesheet" href="freelance.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"></head>
+<body><header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="freelancers.html" class="active">Marketplace</a>
+      <a href="jobs.html">Find Jobs</a>
+      <a href="post-job.html">Post a Job</a>
+      <a href="create-service.html">Create Service</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="orders.html">Orders</a>
+      <a href="my-proposals.html">Proposals</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="profile.html">My Profile</a>
+      <a href="about.html">About</a>
+      <a href="auth.html" class="nav-auth">Login / Register</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main class="page-wrap week7-market">
+<section class="week7-intro"><div><p class="eyebrow">Find your next great match</p><h1>Explore freelance services</h1><p class="muted">Search talented freelancers and services, then narrow your results with smart filters.</p></div>
+<div class="market-stats"><span><strong>2,480+</strong> Freelancers</span><span><strong>1,200+</strong> Services</span><span><strong>4.9/5</strong> Average rating</span></div></section>
+<section class="panel week7-search-panel"><form id="marketSearchForm" class="week7-search"><input id="marketSearch" type="search" placeholder="Search services, freelancers, jobs or skills..." aria-label="Search marketplace"><button class="btn btn-primary" type="submit">Search</button></form>
+<div class="quick-searches"><span>Popular:</span><button type="button" data-market-search="Web Development">Web Development</button><button type="button" data-market-search="UI/UX Design">UI/UX Design</button><button type="button" data-market-search="Graphic Design">Graphic Design</button><button type="button" data-market-search="Digital Marketing">Digital Marketing</button></div></section>
+<div class="week7-results-layout"><aside class="panel week7-filter-panel"><div class="filter-heading"><h2>Filters</h2><button type="button" id="clearMarketFilters" class="text-link">Clear all</button></div>
+<div class="field"><label for="marketCategory">Category</label><select id="marketCategory"><option value="">All categories</option><option>Web Development</option><option>UI/UX Design</option><option>Graphic Design</option><option>Mobile App Development</option><option>Graphic Design</option><option>Digital Marketing</option><option>Writing & Translation</option><option>Data Analysis</option></select></div>
+<div class="field"><label for="marketMinPrice">Minimum price (PKR)</label><input id="marketMinPrice" type="number" min="0" placeholder="0"></div>
+<div class="field"><label for="marketMaxPrice">Maximum price (PKR)</label><input id="marketMaxPrice" type="number" min="0" placeholder="No limit"></div>
+<div class="field"><label for="marketRating">Minimum rating</label><select id="marketRating"><option value="0">Any rating</option><option value="4">4.0+ stars</option><option value="4.5">4.5+ stars</option><option value="4.8">4.8+ stars</option><option value="5">5 stars</option></select></div>
+<div class="field"><label for="marketDelivery">Delivery time</label><select id="marketDelivery"><option value="">Any delivery time</option><option value="3">Up to 3 days</option><option value="5">Up to 5 days</option><option value="7">Up to 7 days</option><option value="14">Up to 14 days</option></select></div>
+<div class="field"><label for="marketExperience">Experience level</label><select id="marketExperience"><option value="">Any experience</option><option>Beginner</option><option>Intermediate</option><option>Expert</option></select></div>
+</aside><section class="week7-result-area"><div class="week7-result-toolbar"><div><h2>Recommended services</h2><p class="muted" id="marketResultCount" aria-live="polite">Loading services...</p></div><div class="field sort-field"><label for="marketSort">Sort by</label><select id="marketSort"><option value="popular">Most Popular</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Highest Rating</option><option value="newest">Newest</option></select></div></div>
+<div id="marketResults" class="week7-service-grid" aria-live="polite"><div class="week7-loading"><span class="loading-spinner"></span><p>Finding the best services for you...</p></div></div></section></div></main>
+<footer class="footer"><div class="container footer-content"><div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div><div class="footer-links"><h4>Explore</h4><a href="freelancers.html">Services</a><a href="jobs.html">Jobs</a><a href="favorites.html">Favorites</a></div><div class="footer-social"><h4>Your workspace</h4><a href="dashboard.html">Dashboard</a><a href="messages.html">Messages</a></div></div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 7 project.</p></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><script src="freelance.js"></script></body></html>

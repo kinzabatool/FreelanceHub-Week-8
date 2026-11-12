@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Messages | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head>
+<body><header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="freelancers.html">Marketplace</a>
+      <a href="jobs.html">Find Jobs</a>
+      <a href="post-job.html">Post a Job</a>
+      <a href="create-service.html">Create Service</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="messages.html" class="active">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="profile.html">My Profile</a>
+      <a href="about.html">About</a>
+      <a href="auth.html" class="nav-auth">Login / Register</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main class="w6-wrap"><div class="w6-heading"><div><p class="eyebrow">Workspace · Week 6</p><h1>Messages</h1><p class="w6-muted">Chat with clients and freelancers about your projects.</p></div><a class="btn btn-primary" href="orders.html">View my projects</a></div>
+<div class="w6-layout"><section class="w6-panel"><div class="w6-panel-head"><h2>Conversations</h2><span class="w6-muted" id="conversationCount">3 chats</span></div><div id="conversationList"></div></section>
+<section class="w6-panel w6-chat"><div class="w6-chat-head"><div class="w6-avatar" id="chatAvatar">BF</div><div><strong id="chatName">Bright Future Studio</strong><span class="w6-online">● Active recently</span></div></div><div class="w6-messages" id="chatMessages" aria-live="polite"></div><form class="w6-chat-form" id="messageForm"><input id="messageInput" maxlength="500" placeholder="Write your message..." autocomplete="off" required><button class="w6-btn" type="submit">Send ↗</button></form></section></div></main>
+<footer class="footer"><div class="container footer-bottom"><p>© 2026 FreelanceHub Marketplace · Week 6</p></div></footer><div class="w6-toast" id="w6Toast" role="status"></div><script src="freelance.js"></script></body></html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"></head><body>
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="freelancers.html">Marketplace</a>
+      <a href="jobs.html">Find Jobs</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="orders.html">Orders</a>
+      <a href="my-proposals.html">Proposals</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="profile.html">My Profile</a>
+      <a href="about.html">About</a>
+      <a href="auth.html" class="nav-auth">Login / Register</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main class="page-wrap"><section class="dashboard-welcome"><div><p class="eyebrow">Your workspace</p><h1>Good day, Ayesha 👋</h1><p class="muted">Here's what's happening with your freelance marketplace activity.</p></div><div class="role-switch"><label for="dashboardRole">Dashboard view</label><select id="dashboardRole"><option value="freelancer">Freelancer</option><option value="client">Client</option></select></div></section>
+<div class="dashboard-stat-grid" id="dashboardStats"><article class="dashboard-stat"><span>My Services</span><strong id="dashServices">03</strong><small>Published services</small></article><article class="dashboard-stat"><span>Orders</span><strong id="dashOrders">08</strong><small>All-time orders</small></article><article class="dashboard-stat"><span>Active Projects</span><strong id="dashProjects">04</strong><small>Currently in progress</small></article><article class="dashboard-stat"><span>Earnings</span><strong id="dashValue">PKR 45,000</strong><small>Project value</small></article></div>
+<div class="dashboard-content-grid"><section class="panel dashboard-main"><div class="section-heading"><div><h2 id="dashboardSectionTitle">Recent orders</h2><p class="muted" id="dashboardSectionDesc">Track your latest client work.</p></div><a href="orders.html" class="text-link">View all →</a></div><div id="dashboardRecent" class="dashboard-list"></div></section>
+<aside class="panel dashboard-side"><h2>Quick actions</h2><a class="dashboard-action" href="create-service.html">＋ Create a service <span>→</span></a><a class="dashboard-action" href="post-job.html">＋ Post a job <span>→</span></a><a class="dashboard-action" href="freelancers.html">⌕ Explore marketplace <span>→</span></a><a class="dashboard-action" href="messages.html">✉ Open messages <span>→</span></a><div class="dashboard-tip"><strong>Marketplace tip</strong><p>Keep your profile and service details updated to help clients find the right match.</p></div></aside></div>
+<section class="panel marketplace-analytics"><div class="section-heading"><div><h2>Marketplace statistics</h2><p class="muted">A quick look at the FreelanceHub community.</p></div><span class="analytics-period">This month</span></div><div class="analytics-grid"><div><strong>2,480+</strong><span>Freelancers</span></div><div><strong>1,200+</strong><span>Services listed</span></div><div><strong>860+</strong><span>Projects completed</span></div><div><strong>4.9/5</strong><span>Average rating</span></div></div></section>
+</main><footer class="footer"><div class="container footer-content"><div class="footer-brand"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><p>Good people. Great work. Better possibilities.</p></div><div class="footer-links"><h4>Marketplace</h4><a href="freelancers.html">Explore services</a><a href="favorites.html">Favorites</a></div><div class="footer-social"><h4>Workspace</h4><a href="orders.html">Orders</a><a href="messages.html">Messages</a></div></div><div class="footer-bottom"><p>© 2026 FreelanceHub Marketplace. Week 7 project.</p></div></footer><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="freelance.js"></script></body></html>

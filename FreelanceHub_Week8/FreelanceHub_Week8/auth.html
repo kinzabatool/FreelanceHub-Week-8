@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Register | FreelanceHub</title>
+  <link rel="stylesheet" href="freelance.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar"><div class="container nav-container"><a href="index.html" class="logo">FreelanceHub<span>.</span></a><nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="freelancers.html">Marketplace</a><a href="jobs.html">Find Jobs</a><a href="post-job.html">Post a Job</a><a href="create-service.html">Create Service</a><a href="dashboard.html">Dashboard</a><a href="auth.html" class="active">Login / Register</a></nav><button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation">☰</button></div></header>
+<main class="section container auth-page">
+  <section class="panel auth-panel">
+    <p class="eyebrow">YOUR FREELANCE JOURNEY STARTS HERE</p>
+    <h1 id="authHeading">Welcome back</h1>
+    <p class="muted">Sign in to manage projects, connect with talent and grow your work.</p>
+    <div class="auth-tabs"><button class="auth-tab active" type="button" data-auth-mode="login">Login</button><button class="auth-tab" type="button" data-auth-mode="register">Create account</button></div>
+    <form id="authForm" class="form-stack">
+      <div id="authNameField" hidden><label for="authName">Full name</label><input id="authName" type="text" placeholder="Your full name" minlength="2"></div>
+      <div><label for="authEmail">Email address</label><input id="authEmail" type="email" placeholder="you@example.com" required></div>
+      <div><label for="authPassword">Password</label><input id="authPassword" type="password" placeholder="At least 6 characters" minlength="6" required></div>
+      <button id="authSubmit" class="btn btn-primary" type="submit">Login</button>
+      <p id="authMessage" role="status" aria-live="polite"></p>
+    </form>
+    <p class="auth-note">Demo frontend only: accounts are saved in this browser and are not connected to a secure server.</p>
+  </section>
+</main>
+<footer class="footer"><div class="container footer-bottom"><p>&copy; 2026 FreelanceHub Marketplace. All rights reserved.</p></div></footer>
+<script src="freelance.js"></script>
+</body></html>

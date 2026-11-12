@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reviews | FreelanceHub</title><link rel="stylesheet" href="freelance.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;800&display=swap" rel="stylesheet"></head>
+<body><header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">FreelanceHub<span>.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="freelancers.html">Marketplace</a>
+      <a href="jobs.html">Find Jobs</a>
+      <a href="post-job.html">Post a Job</a>
+      <a href="create-service.html">Create Service</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="orders.html">Orders</a>
+      <a href="my-proposals.html">Proposals</a>
+      <a href="messages.html">Messages</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="profile.html">My Profile</a>
+      <a href="about.html">About</a>
+      <a href="auth.html" class="nav-auth">Login / Register</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main class="w6-wrap"><div class="w6-heading"><div><p class="eyebrow">Workspace · Week 6</p><h1>Reviews & Ratings</h1><p class="w6-muted">Share feedback after a project is completed.</p></div><a class="btn btn-primary" href="orders.html">My completed projects</a></div>
+<div class="w6-review-layout"><section class="w6-panel"><div class="w6-panel-head"><h2>Rate your experience</h2></div><form class="w6-review-form" id="reviewForm"><label for="reviewProject">Completed project</label><select id="reviewProject" required><option value="">Choose a completed project</option></select><label for="reviewerName">Your name</label><input id="reviewerName" value="Ayesha Khan" required maxlength="60"><label>Star rating</label><div class="w6-stars" id="starPicker" aria-label="Choose a rating"><button class="w6-star" type="button" data-rating="1" aria-label="1 star">★</button><button class="w6-star" type="button" data-rating="2" aria-label="2 stars">★</button><button class="w6-star" type="button" data-rating="3" aria-label="3 stars">★</button><button class="w6-star" type="button" data-rating="4" aria-label="4 stars">★</button><button class="w6-star" type="button" data-rating="5" aria-label="5 stars">★</button></div><label for="reviewComment">Review / comment</label><textarea id="reviewComment" minlength="10" maxlength="600" placeholder="Tell others about your experience (at least 10 characters)..." required></textarea><p class="w6-muted" id="ratingHint">Select a rating from 1 to 5 stars.</p><button class="w6-btn" type="submit">Submit review</button><p id="reviewFeedback" class="w6-muted" aria-live="polite"></p></form></section>
+<section><div class="w6-panel-head"><h2>Recent reviews</h2></div><div id="reviewList"></div></section></div></main>
+<footer class="footer"><div class="container footer-bottom"><p>© 2026 FreelanceHub Marketplace · Week 6</p></div></footer><div class="w6-toast" id="w6Toast" role="status"></div><script src="freelance.js"></script></body></html>
